@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <fieldset>
+        <legend><h2>Form Filling</h2></legend>
+     <form action="">
+        <label for="email"> Enter email:</label>
+        <input type="text" id="email">
+       <br>
+       <br>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    <form action="">
+      
+     <h2> Specify your Gender:</h2>
+        <label for="gender">Male:</label>
+        <input type="radio" id="gender">
+        <label for="F">Female</label>
+        <input type="radio" id="F">
+        <Label for="o">other</Label>
+        <input type="radio" id="o"> <br>
+<input type="submit" value="Done">
+    </form>
+    <br>
+   
+ <form action="">
+       <Label for="A">Username:</Label>
+       <input type="text" id="A" placeholder="0.22caliber@gmail.com">
+      <br>
+       <label for="B">Password:</label>
+       <input type="password" id="B" placeholder="Dhxf123.">
+       <br>
+       <input type="submit" value="login">
+    </form>
+
+
+    <br><br><br>
+    <form action="">
+        <label for="date">Select date</label>
+        <input type="datetime-local" id="date"><br>
+        <br><br>
+        <label for="sel">Choose Your City</label>
+        <select name="City:" id="sel">
+            <option value="khi">Karachi</option>
+            <option value="isl">Islamabad</option>
+            <option value="fsd">Faisalabad</option>
+        </select>
+    </form>
+    <br>
+
+    <textarea name="co" id="ta" cols="30" rows="10" placeholder="enter text here......"></textarea>
+
+    <form action="">
+        <input type="submit" id="button" value="Subscribe">
+<br><br>
+Chose your Language<br>
+<label for="checkbox">english</label>
+<input type="checkbox" id="checkbox">
+<label for="cu">Urdu</label>
+<input type="checkbox" id="cu">
+<br><br><br>
+<label for="file1">Upload file</label>
+<input type="file" id="file1">
+    </form>
+   </fieldset>
+
+
+</body>
+</html>
