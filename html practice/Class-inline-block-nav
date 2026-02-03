@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <section class="rex"></section> 
+   <p class="co"></p>
+   <h1>block element</h1>
+   <div style="background-color: blue;">helloiiiii</div>
+   <h1>Inline element</h1>
+   <span style="background-color: rgb(69, 22, 240);">hiii</span>
+   <h1>converting block element into inline element</h1>
+   <p style="background-color: aqua;">paragraph tag</p>
+   <p style="background-color: aqua;display: inline;">paragraph tag</p>
+   <h1>converting inline element into block element</h1>
+  <span>span tag is inline element</span>
+   <span style="background-color: rgb(4, 255, 0);display: block;">heloo</span>
+   <ul>
+    <Li>
+        <P><a href="https://www.google.com">google</a></P>
+    </Li>
+    <Li>
+        <P><a href="https://www.youtube.com">utube</a></P>
+    </Li>
+    <Li>
+        <P><a href="https://www.github.com">github</a></P>
+    </Li>
+   </ul>
+<nav>
+    <ul>
+        <Li><a href="">home</a></Li>
+        <Li><a href="">about</a></Li>
+        <Li><a href="https://www.gooogle.com">google</a></Li>
+    </ul>
+</nav>
+<nav><a href="">about</a>     <a href="">home</a>     <a href="mailto: mubaidurrehman7861@gmail.com">mail us</a></nav>
+   <ol>
+    <Li>
+        <section>
+            <h1>Lion</h1>
+            The lion (Panthera leo) is a large cat of the genus Panthera, currently ranging only in Sub-Saharan Africa and India. It has a muscular, broad-chested body; a short, rounded head; round ears; and a dark, hairy tuft at the tip of its tail. It is sexually dimorphic; adult male lions are larger than females and have a more prominent mane that which extends from the head to the shoulders and chest.
+        </section>
+    </Li>
+    <Li>
+        <section>
+            <h1>Panther</h1>
+            A black panther is the melanistic colour variant of the leopard (Panthera pardus) and the jaguar (Panthera onca). Black panthers of both species have excess black pigments, but their typical rosettes are also present. They have been documented mostly in tropical forests, with black leopards in Africa and Asia, and black jaguars in Central and South America. Melanism is caused by a recessive allele in the leopard, and by a dominant allele in the jaguar.
+        </section>
+    </Li>
+    <Li>
+        <section>
+            <h1>Cheetah</h1>
+            A black panther is the melanistic colour variant of the leopard (Panthera pardus) and the jaguar (Panthera onca). Black panthers of both species have excess black pigments, but their typical rosettes are also present. They have been documented mostly in tropical forests, with black leopards in Africa and Asia, and black jaguars in Central and South America. Melanism is caused by a recessive allele in the leopard, and by a dominant allele in the jaguar.
+        </section>
+    </Li>
+    <Li>
+        <section>
+            <h1>Puma</h1>
+            Puma (/ˈpjuːmə/ or /ˈpuːmə/) is a genus in the family Felidae whose only extant species is the cougar (also known as the puma, mountain lion, and panther,[2] among other names), and may also include several poorly known Old World fossil representatives (for example, Puma pardoides, or Owen's panther, a large, cougar-like cat of Eurasia's Pliocene).[3][4] In addition to these potential Old World fossils, a few New World fossil representatives are possible, such as Puma pumoides[5] and the two species of the so-called "American cheetah", currently classified under the genus Miracinonyx.[6]
+            
+        </section>
+    </Li>
+   </ol>
+    
+
+
+
+</body>
+</html>
