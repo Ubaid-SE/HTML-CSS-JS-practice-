@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+background:
+linear-gradient(rgba(255,214,232,0.85), rgba(255,240,245,0.9)),
+url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1350&q=80");
+background-size:cover;
+background-position:center;
+font-family:'Poppins',sans-serif;
+overflow:hidden;
+text-align:center;
+color:#b30059;
+}
+
+.container{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:30px;
+width:85%;
+max-width:600px;
+box-shadow:0 0 40px rgba(255,0,102,0.2);
+animation:fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translate(-50%,-45%);}
+to{opacity:1;transform:translate(-50%,-50%);}
+}
+
+h1{
+font-family:'Pacifico',cursive;
+font-size:2.8rem;
+margin-bottom:20px;
+}
+
+.cat{
+width:150px;
+margin-bottom:15px;
+}
+
+p{
+font-size:1.1rem;
+line-height:1.8;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff66a3;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff3385;
+transform:scale(1.05);
+}
+
+#secret, #extraLine{
+display:none;
+margin-top:20px;
+font-size:1.2rem;
+animation:fadeIn 1.5s ease-in-out;
+}
+
+#extraLine{
+font-size:1rem;
+color:#cc0066;
+font-style:italic;
+}
+
+/* Popup */
+#popup{
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,0,102,0.3);
+text-align:center;
+z-index:100;
+}
+
+.popup-buttons{
+margin-top:20px;
+position:relative;
+}
+
+#noBtn{
+position:absolute;
+}
+
+.heart{
+position:fixed;
+font-size:20px;
+animation:float 4s linear forwards;
+}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-200px);opacity:0;}
+}
+
+footer{
+position:absolute;
+bottom:10px;
+width:100%;
+font-size:0.8rem;
+opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img class="cat" src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="cat kiss">
+
+<h1>Dear Sonu 💖</h1>
+
+<p>
+Every moment with you feels gentle and beautiful.  
+You bring warmth into my life in the softest way.  
+Being with you feels like peace.
+</p>
+
+<button onclick="askPassword()">Open My Heart 💌</button>
+
+<div id="secret">
+I don’t need the world…  
+I just need you beside me.  
+
+Your smile makes my days brighter.  
+Your presence makes everything better.  
+
+You are my comfort,  
+my happiness,  
+my forever love. 💕
+</div>
+
+<div id="extraLine">
+Ye bana rha tha iss liye aap jeet gayi 😔❤️  
+Warna late nahi hona tha mujhe...
+</div>
+
+</div>
+
+<!-- FINAL POPUP -->
+<div id="popup">
+<h2 style="font-family:'Pacifico',cursive;color:#ff3385;">
+Will You Be Mine Forever? 💍
+</h2>
+
+<div class="popup-buttons">
+<button onclick="yesClicked()">Yes 💖</button>
+<button id="noBtn" onmouseover="moveButton()">NO</button>
+</div>
+</div>
+
+<footer>
+Forever Yours ❤️
+</footer>
+
+<script>
+
+function askPassword(){
+let password = "08012026";
+let entered = prompt("Enter the date we met! yad hy na date? (DDMMYYYY) 💖");
+
+if(entered === password){
+document.getElementById("secret").style.display="block";
+document.getElementById("extraLine").style.display="block";
+
+setTimeout(()=>{
+document.getElementById("popup").style.display="block";
+},1500);
+
+}else{
+alert("Date yad nahi aap ko? 😌❤️ Try again.");
+}
+}
+
+/* Move NO button */
+function moveButton(){
+let btn = document.getElementById("noBtn");
+btn.style.top = Math.random()*80 + "px";
+btn.style.left = Math.random()*150 + "px";
+}
+
+/* Yes clicked */
+function yesClicked(){
+document.getElementById("popup").innerHTML = 
+"<h2 style='color:#ff3385;font-family:Pacifico,cursive;'>Yayyy 💖</h2><p>You just made me the happiest person alive 🥺💕</p>";
+heartExplosion();
+}
+
+/* Heart explosion */
+function heartExplosion(){
+for(let i=0;i<40;i++){
+let heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="💖";
+heart.style.left=Math.random()*100+"vw";
+heart.style.top="70vh";
+document.body.appendChild(heart);
+setTimeout(()=>{heart.remove();},4000);
+}
+}
+
+</script>
+
+</body>
+</html>
